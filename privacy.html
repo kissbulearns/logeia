@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Logeia</title>
+<style>
+  :root {
+    --bg: #ffffff; --bg2: #edf5ff; --text: #1a1d21; --muted: #5b6470;
+    --accent: #3f8cf2; --card: #f6f9fe; --border: #e3eaf3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0d14; --bg2: #121a29; --text: #e8ebef; --muted: #98a2ae;
+      --accent: #6fa8ff; --card: #141b28; --border: #223048;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+    min-height: 100vh;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 32px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 10px; }
+  p, li { color: var(--text); margin-bottom: 12px; }
+  ul { padding-left: 22px; }
+  .summary {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 18px 20px; margin-bottom: 28px;
+    font-weight: 500;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border);
+           color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Logeia Privacy Policy</h1>
+  <p class="updated">Last updated: July 9, 2026</p>
+
+  <div class="summary">
+    The short version: Logeia collects nothing. Everything you save stays
+    on your device. There are no accounts, no servers, no analytics, no
+    ads, and no third-party SDKs.
+  </div>
+
+  <h2>What we collect</h2>
+  <p>Nothing. Logeia has no backend and no analytics. We never see your
+  saved items, your searches, your questions, or anything else. The app
+  contains no third-party tracking or advertising code.</p>
+
+  <h2>Where your data lives</h2>
+  <p>Everything you save — articles, posts, transcripts, notes, summaries —
+  is stored in a database on your iPhone, protected by iOS Data
+  Protection (encrypted at rest). AI summaries and answers are generated
+  on your device by Apple Intelligence; your content is not sent to any
+  cloud AI service by Logeia.</p>
+
+  <h2>Network access</h2>
+  <p>Logeia connects to the internet for exactly one purpose: fetching the
+  content you ask it to save (the article page, post, or video transcript
+  and thumbnail). These requests go directly from your device to the
+  source website. No request is routed through, or logged by, any server
+  of ours — none exists.</p>
+
+  <h2>Backup — and what happens if you delete the app</h2>
+  <p>Today, your library exists only on your device (and inside your own
+  device backups, if you have iPhone backups enabled). <strong>If you
+  uninstall Logeia without a device backup, your saved library may be
+  permanently lost.</strong></p>
+  <p>An optional backup feature is planned that syncs your library to your
+  own iCloud account (Apple's CloudKit private database). When it ships:
+  it will be off by default, the data will live in <em>your</em> iCloud —
+  readable by you, governed by Apple's iCloud terms — and we still will
+  not be able to access it.</p>
+
+  <h2>Your content, your rights</h2>
+  <p>Everything in Logeia is yours. Delete any item, or the whole app, at
+  any time — deletion is immediate and local. There is no account to
+  close and no data of yours anywhere for us to delete.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Logeia does not collect data from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app's data practices ever change (for example, when optional
+  iCloud backup ships), this policy will be updated here before the
+  change takes effect, with the date above revised.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy or anything else: open an issue on
+  <a href="https://github.com/kissbulearns/logeia/issues">GitHub Issues</a>.</p>
+
+  <footer>
+    <a href="index.html">← Back to Logeia</a>
+  </footer>
+</main>
+</body>
+</html>

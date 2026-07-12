@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logeia — Record. Remember. Retrieve.</title>
+<meta name="description" content="Logeia is a private second brain for iOS. Save articles, posts, and videos; on-device AI summarizes them; find anything instantly. Nothing leaves your phone.">
+<style>
+  :root {
+    --bg: #ffffff; --bg2: #edf5ff; --text: #1a1d21; --muted: #5b6470;
+    --accent: #3f8cf2; --card: #f6f9fe; --border: #e3eaf3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0d14; --bg2: #121a29; --text: #e8ebef; --muted: #98a2ae;
+      --accent: #6fa8ff; --card: #141b28; --border: #223048;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+    min-height: 100vh;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 2.4rem; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.35rem; font-weight: 600; color: var(--accent); margin: 8px 0 16px; }
+  .lede { color: var(--muted); font-size: 1.05rem; margin-bottom: 40px; }
+  h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.08em;
+       color: var(--muted); margin: 40px 0 14px; }
+  .cards { display: grid; gap: 14px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 18px 20px;
+  }
+  .card strong { display: block; margin-bottom: 4px; font-size: 1.05rem; }
+  .card span { color: var(--muted); font-size: 0.97rem; }
+  .privacy-callout {
+    border-left: 4px solid var(--accent); background: var(--card);
+    border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 40px 0;
+    color: var(--muted); font-size: 0.97rem;
+  }
+  .privacy-callout strong { color: var(--text); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border);
+           color: var(--muted); font-size: 0.9rem; }
+  footer nav { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Logeia</h1>
+  <p class="tagline">Record. Remember. Retrieve.</p>
+  <p class="lede">
+    A private second brain for iPhone. Save anything you read, watch, or
+    listen to — Logeia summarizes it with on-device AI and brings it back
+    the moment you need it. Your library never leaves your phone.
+  </p>
+
+  <h2>How it works</h2>
+  <div class="cards">
+    <div class="card">
+      <strong>📥 Record</strong>
+      <span>Save articles, X posts, and YouTube videos from any app via the
+      share sheet — or add URLs, notes, screenshots (with text recognition),
+      and pasted text directly. Saving is instant and works offline.</span>
+    </div>
+    <div class="card">
+      <strong>🧠 Remember</strong>
+      <span>Apple Intelligence summarizes and files every item on your
+      device — short summaries, key takeaways, and topics. Listen to any
+      article or transcript with on-device speech, star favorites, and
+      track what you've read.</span>
+    </div>
+    <div class="card">
+      <strong>🔍 Retrieve</strong>
+      <span>Instant full-text search, find-in-page like a PDF reader,
+      jump-to-the-moment search inside video transcripts, and
+      "Ask your library" — grounded answers from what you've saved.</span>
+    </div>
+  </div>
+
+  <div class="privacy-callout">
+    <strong>Private by architecture, not by promise.</strong><br>
+    Logeia has no accounts, no servers, no analytics, and no tracking.
+    All AI runs on your device. We couldn't read your library even if we
+    wanted to — the app has nowhere to send it.
+    <a href="privacy.html">Read the full privacy policy →</a>
+  </div>
+
+  <h2>Availability</h2>
+  <p>
+    Logeia is in development and heading to TestFlight. It requires an
+    iPhone with Apple Intelligence (iPhone 15 Pro or newer, iOS 26).
+    Watch this page or the
+    <a href="https://github.com/kissbulearns/logeia">GitHub repository</a>
+    for the TestFlight link.
+  </p>
+
+  <h2>Support</h2>
+  <p>
+    Questions, bug reports, or feature ideas: please open an issue on
+    <a href="https://github.com/kissbulearns/logeia/issues">GitHub Issues</a>
+    — it's the fastest way to reach the developer.
+  </p>
+
+  <footer>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://github.com/kissbulearns/logeia">Source on GitHub</a>
+      <a href="https://github.com/kissbulearns/logeia/issues">Support</a>
+    </nav>
+    © 2026 Logeia. Local-first, always.
+  </footer>
+</main>
+</body>
+</html>
